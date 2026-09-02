@@ -1,16 +1,4 @@
-### WELCOME TO ASSIGNMENT-002
-🚩Notice
-**⚠️ Hover effect on Arrow Button at Standard Curriculam section is optional**
-# <img width=30 src="./assets/logo.png"/> Kids-School
-
-## **📅 Deadline For 60 marks**: 22th January , 2025 ( 11:59 pm ⏱️)
-
-## **📅 Deadline For 50 marks**: 23th January , 2025 ( 11:59 pm ⏱️)
-
-**📅 Deadline For 30 marks**: Any time after 23th January.
-
-## Requirements (50)
-
+---------Welcome to the kids Education Program ---------
 ### 1. Navbar
 
 - **Logo and Site Name**: Positioned at the left.
@@ -85,14 +73,6 @@
 
 - HTML & CSS only
 - You can't use any other technology / Framework.
-
----
-
-# What to Submit
-
-- Your Github Repository . ex.("https://github.com/Repo-name")
-- Your Live Link. ex.(https://user.github.io/Repo-name/)
-
 ---
 
 # Design for Large Device
