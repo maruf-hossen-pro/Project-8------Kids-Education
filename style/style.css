@@ -125,3 +125,54 @@ body {
     font-weight: 600;
     border-radius: 5px;
 }
+
+@media screen and (max-width:576px) {
+    .navbar{
+        display: none;
+
+    }
+    .logo{
+        display:block;
+    }
+    .mobile-navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border: 1px solid orange;
+    }
+    .humburger-menu{
+        font-size: 20px;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 350px;
+        
+    }
+    .hero-img img{
+        width: 100%;
+        object-fit: cover;
+        height: 400px;
+    }
+    .hero-title{
+        margin-top: 30px;
+    }
+    .hero-heading{
+        font-size: 0.7em;
+        text-align: center;
+
+    }
+    .hero-subtitle{
+        font-size: 0.7em;
+        text-align: center;
+        
+        
+    }
+    .btn-primary {
+    display: block;
+    margin: 0 auto;
+    margin-top: -15px;
+  }
+    
+}
