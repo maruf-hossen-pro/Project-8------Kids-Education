@@ -8,7 +8,6 @@
 body {
   background-image: url("/assets/bg.png");
   background-repeat: repeat-y;
-  
 }
 
 .quicksand-fonts {
@@ -22,10 +21,11 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Vertically centers everything */
+  align-items: center;
   max-width: 1140px;
   margin: 0 auto;
   padding: 20px 0;
+  
 }
 
 /* Left side (Logo and Text) */
@@ -42,7 +42,7 @@ body {
 }
 
 .logo-img {
-  height: 50px; /* Adjust this to match your actual logo image size */
+  height: 50px;
   width: auto;
 }
 
@@ -50,7 +50,7 @@ body {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 25px; /* Spacing between links */
+  gap: 25px;
 }
 
 .nav-links a {
@@ -59,7 +59,6 @@ body {
   font-size: 16px;
 }
 
-/* Placeholder colors for the links to match your screenshot */
 .nav-link.home { color: #f39c12; }
 .nav-link.about { color: #3498db; }
 .nav-link.facilities { color: #00cec9; }
@@ -68,114 +67,250 @@ body {
 /* Right side (Contact Button) */
 .contact-btn {
   display: inline-block;
-  background-color: #f39c12; /* Orange color */
+  background-color: #f39c12;
   color: white;
   text-decoration: none;
   padding: 10px 28px;
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 8px;
   font-weight: 600;
   font-size: 16px;
   transition: background-color 0.2s ease-in-out;
 }
-.mobile-navbar{
-    display: none;
-}
 
 .contact-btn:hover {
-  background-color: #e67e22; /* Slightly darker orange on hover */
+  background-color: #e67e22;
 }
-.logo{
+
+.mobile-navbar {
+  display: none;
+}
+
+.logo,
+.humberger-icon {
+  display: none;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.hero-title {
+  max-width: 600px;
+  font-size: 1.5em;
+}
+
+.hero-subtitle {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 0.8em;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.orange { color: orange; }
+.aqua { color: rgb(71, 186, 232); }
+
+.btn-primary {
+  padding: 15px 30px;
+  border: none;
+  background-color: black;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ======================================= */
+/* Curriculum & Card Section (Desktop Base) */
+/* ======================================= */
+
+.Curriculum-title {
+  text-align: center;
+  margin: 70px 0 40px;
+}
+
+.card-section {
+  display: grid;
+  max-width: 1140px;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 0 20px;
+}
+
+/* Common Card Styling */
+.first-card,
+.second-card,
+.third-card {
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0f2fe;
+  text-align: center;
+  padding: 35px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-card {
+  background: linear-gradient(180deg, #e3f7ff 0%, #ffffff 80%);
+}
+
+.second-card {
+  background: linear-gradient(180deg, #fdffe3 0%, #ffffff 80%);
+}
+
+.third-card {
+  background: linear-gradient(180deg, #e8e3ff 0%, #ffffff 80%);
+}
+
+.card-section img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.card-section h3 {
+  font-size: 1.4em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.card-section p {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Card Buttons Styling */
+.btn-1,
+.btn-2,
+.btn-3 {
+  padding: 10px 0;
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.btn-1 { color: #64C8FF; }
+.btn-2 { color: #F0AA00; }
+.btn-3 { color: #8700FF; }
+
+/* Arrows */
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 40px;
+  gap: 15px;
+}
+
+.left, .right {
+  color: orange;
+  cursor: pointer;
+}
+
+/* ======================================= */
+/* Tablet View Responsiveness (577px - 992px) */
+/* ======================================= */
+@media screen and (max-width: 992px) {
+  .hero {
+    padding: 0 30px;
+  }
+
+  .card-section {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    padding: 0 30px;
+  }
+
+ 
+  .third-card {
+    grid-column: span 2;
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+/* ======================================= */
+/* Mobile View Responsiveness (up to 576px) */
+/* ======================================= */
+@media screen and (max-width: 576px) {
+  .navbar {
     display: none;
 }
-.humberger-icon{
-    display: none;
-}
-.hero{
+
+.mobile-navbar {
+      border: 1px solid #F0AA00;
     display: flex;
     align-items: center;
-    max-width: 1140px;
-    margin: 0 auto;
     justify-content: space-between;
-}
-.hero-title{
-    max-width: 600px;
-    font-size: 1.5em;
-}
-.hero-subtitle{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 0.8em;
+    padding: 15px 20px;
+  }
 
-}
+  .humburger-menu {
+    font-size: 22px;
+  }
 
-.hero-img img{
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 20px;
+  }
+
+  .hero-img img {
     width: 100%;
-    height: 500px;
     object-fit: cover;
-    
-}
-.orange{
-    color: orange;
-}
-.aqua{
-    color: rgb(71, 186, 232);
-}
-.btn-primary{
-    padding: 15px;
-    border: none;
-    background-color: black;
-    color: #fff;
-    font-weight: 600;
-    border-radius: 5px;
-}
+    height: auto;
+  }
 
-@media screen and (max-width:576px) {
-    .navbar{
-        display: none;
+  .hero-title {
+    margin-top: 30px;
+    text-align: center;
+  }
 
-    }
-    .logo{
-        display:block;
-    }
-    .mobile-navbar{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px;
-        border: 1px solid orange;
-    }
-    .humburger-menu{
-        font-size: 20px;
-    }
-    .hero{
-        display: flex;
-        flex-direction: column-reverse;
-        max-width: 350px;
-        
-    }
-    .hero-img img{
-        width: 100%;
-        object-fit: cover;
-        height: 400px;
-    }
-    .hero-title{
-        margin-top: 30px;
-    }
-    .hero-heading{
-        font-size: 0.7em;
-        text-align: center;
+  .hero-heading h1 {
+    font-size: 1.2em;
+  }
 
-    }
-    .hero-subtitle{
-        font-size: 0.7em;
-        text-align: center;
-        
-        
-    }
-    .btn-primary {
+  .hero-subtitle {
+    font-size: 0.8em;
+    margin: 20px 0;
+  }
+
+  .btn-primary {
     display: block;
     margin: 0 auto;
-    margin-top: -15px;
   }
-    
+
+  .Curriculum-title h1 {
+    font-size: 1.5em;
+  }
+
+  
+  .card-section {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .third-card {
+    grid-column: span 1;
+    max-width: 100%;
+  }
 }
