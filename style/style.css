@@ -226,6 +226,150 @@ body {
 }
 
 /* ======================================= */
+/* Our Stories Section (Desktop View)      */
+/* ======================================= */
+
+.stories-section {
+  background: linear-gradient(180deg, rgba(254, 169, 32, 0.05) 0%, rgba(252, 246, 238, 0.5) 100%);
+  padding: 60px 20px;
+  margin-top: 80px;
+}
+
+.stories-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.stories-title h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.stories-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+/* Left Featured Card */
+.featured-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.featured-card .card-img-wrapper img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.featured-card .card-content {
+  padding: 25px;
+}
+
+.featured-card h2 {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.featured-card p {
+  font-size: 0.9em;
+  color: #737373;
+  line-height: 1.6;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.75em;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: -16px;
+  margin-left: 20px;
+  position: relative;
+  z-index: 2;
+  width: fit-content;
+}
+
+.cyan-badge { background-color: #26c6da; }
+.green-badge { background-color: #95c11f; }
+.purple-badge { background-color: #6366f1; }
+
+/* Right Small Cards Grid */
+.small-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.story-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+}
+
+.story-card .card-img-wrapper img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+.story-card .card-content {
+  padding: 15px;
+}
+
+.story-card h3 {
+  font-size: 0.9em;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+/* View All Button */
+.view-all-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-view-all {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 12px 35px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-view-all:hover {
+  background-color: #333333;
+}
+
+/* ======================================= */
 /* Tablet View Responsiveness (577px - 992px) */
 /* ======================================= */
 @media screen and (max-width: 992px) {
