@@ -1,0 +1,82 @@
+/* Basic Reset for clean styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f8fa; /* Slight gray background from the image */
+  
+}
+
+.quicksand-fonts {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Main Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically centers everything */
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Left side (Logo and Text) */
+.edu-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.edu-info h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.logo-img {
+  height: 50px; /* Adjust this to match your actual logo image size */
+  width: auto;
+}
+
+/* Middle side (Nav Links) */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px; /* Spacing between links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Placeholder colors for the links to match your screenshot */
+.nav-link.home { color: #f39c12; }
+.nav-link.about { color: #3498db; }
+.nav-link.facilities { color: #00cec9; }
+.nav-link.admission { color: #6c5ce7; }
+
+/* Right side (Contact Button) */
+.contact-btn {
+  display: inline-block;
+  background-color: #f39c12; /* Orange color */
+  color: white;
+  text-decoration: none;
+  padding: 10px 28px;
+  border-radius: 8px; /* Rounded corners */
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.contact-btn:hover {
+  background-color: #e67e22; /* Slightly darker orange on hover */
+}
